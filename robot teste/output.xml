@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230105 14:05:22.418" rpa="false" schemaversion="3">
+<suite id="s1" name="Form" source="C:\Users\miche\Documents\robot teste\form.robot">
+<test id="s1-t1" name="Cenário 1: Preencher formulário" line="37">
+<kw name="abrir navegador acessar o site">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230105 14:05:22.613" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230105 14:05:22.612" endtime="20230105 14:05:27.360"/>
+</kw>
+<status status="PASS" starttime="20230105 14:05:22.612" endtime="20230105 14:05:27.360"/>
+</kw>
+<kw name="navegador">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230105 14:05:32.362" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230105 14:05:27.361" endtime="20230105 14:05:32.362"/>
+</kw>
+<status status="PASS" starttime="20230105 14:05:27.361" endtime="20230105 14:05:32.362"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>Bianca</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230105 14:05:32.364" level="INFO">Typing text 'Bianca' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20230105 14:05:32.363" endtime="20230105 14:05:32.454"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_phone}</arg>
+<arg>98000098</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230105 14:05:32.454" level="INFO">Typing text '98000098' into text field 'id:phone'.</msg>
+<status status="PASS" starttime="20230105 14:05:32.454" endtime="20230105 14:05:32.537"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>bianca@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230105 14:05:32.538" level="INFO">Typing text 'bianca@teste.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20230105 14:05:32.537" endtime="20230105 14:05:32.617"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230105 14:05:32.618" level="INFO">Typing text '12345' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230105 14:05:32.617" endtime="20230105 14:05:32.699"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textarea_adress}</arg>
+<arg>xxxxxxxxxxxxxxxxx</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230105 14:05:32.700" level="INFO">Typing text 'xxxxxxxxxxxxxxxxx' into text field 'id:address'.</msg>
+<status status="PASS" starttime="20230105 14:05:32.699" endtime="20230105 14:05:32.800"/>
+</kw>
+<status status="PASS" starttime="20230105 14:05:32.363" endtime="20230105 14:05:32.800"/>
+</kw>
+<kw name="clicar em submit">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230105 14:05:32.801" level="INFO">Clicking element 'name:submit'.</msg>
+<status status="PASS" starttime="20230105 14:05:32.801" endtime="20230105 14:05:32.839"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230105 14:05:37.840" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230105 14:05:32.839" endtime="20230105 14:05:37.840"/>
+</kw>
+<status status="PASS" starttime="20230105 14:05:32.801" endtime="20230105 14:05:37.840"/>
+</kw>
+<status status="PASS" starttime="20230105 14:05:22.612" endtime="20230105 14:05:37.841"/>
+</test>
+<status status="PASS" starttime="20230105 14:05:22.420" endtime="20230105 14:05:37.843"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Form">Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
